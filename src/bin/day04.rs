@@ -65,9 +65,8 @@ fn part2(mut grid: Vec<Vec<bool>>) -> u64 {
                 }
             }
         }
-        if removed > 0 {
-            res += removed;
-        } else {
+        res += removed;
+        if removed == 0 {
             break;
         }
     }
